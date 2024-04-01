@@ -2,12 +2,12 @@
 #include<vector>
 
 
-int sum(std::vector<int> data) {				// recursive function		
+int sum(std::vector<int> data) {			// recursive function		
 	// recursive case
 	if (!data.empty()) {							
-		int mem = data[0];						// remember the first element
-		data.erase(data.begin());				// erase the first element
-		return sum(data) + mem;					// add the mem variable to the sum
+		int mem = data[0];			// remember the first element
+		data.erase(data.begin());		// erase the first element
+		return sum(data) + mem;			// add the mem variable to the sum
 	}
 	// base case
 	return 0;										
